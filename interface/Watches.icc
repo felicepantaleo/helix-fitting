@@ -1,0 +1,33 @@
+#ifdef DEBUG
+char watch_names[5][20]={"Simulation","FullReco","Full Overhead",
+  "Covariance Matrix","Reference Track"};
+#endif
+
+inline clock_t wholeTiming( int i )
+{
+  return userTiming[i]+sysTiming[i];
+};
+
+inline void WatchStart( int i )
+{
+  Timing[i]-=times(&mytms);
+  userTiming[i]-=mytms.tms_utime;
+  sysTiming[i]-=mytms.tms_stime;
+  #ifdef DEBUG
+  lastTiming[i]=wholeTiming(i);
+  MESSAGE(52,"[watch]    Started watch "+any2str(i) + " (" + watch_names[i] +
+      ").");
+  #endif
+};
+
+inline void WatchStop( int i )
+{
+  Timing[i]+=times(&mytms);
+  userTiming[i]+=mytms.tms_utime;
+  sysTiming[i]+=mytms.tms_stime;
+  #ifdef DEBUG
+  MESSAGE(53,"[watch]    Stopped watch " + any2str(i) + " (" + watch_names[i] +
+      ").");
+  MESSAGE(53,"[watch]       `---> " + any2str(wholeTiming(i) -lastTiming[i]));
+  #endif
+};

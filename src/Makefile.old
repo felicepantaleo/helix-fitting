@@ -1,0 +1,71 @@
+# make sure, env variable LD_LIBRARY_PATH = /usr/local/lib
+
+# yes. make -e 'DEBUG=0' turns off debugging.
+VERBOSE=5
+DEBUG=1
+OPTIMIZE=1
+
+# CELL=/afs/hephy.at
+INVENTOR=$(CELL)/sw/lhcxx/specific/@sys/OpenInventor/2.6/
+
+HEPVIS_BASE= ../hepvis
+HEPVIS_INCLUDE = -I$(HEPVIS_BASE)
+
+INCLUDES = -I/usr/X11R6/include $(HEPVIS_INCLUDE) \
+           -I$(CELL)/sw/lhcxx/specific/@sys/CLHEP/1.6.0.0/include\
+		   -I../interface/
+
+SETVERBOSE=-DVERBOSE=$(VERBOSE)
+	
+ifeq ($(DEBUG),0)
+	SETDEBUG=
+else 
+	SETDEBUG=-DDEBUG
+endif
+
+ifeq ($(OPTIMIZE),0)
+	SETOPTIMIZE=
+else 
+	SETOPTIMIZE=-O
+endif
+
+CXX=/usr/local/bin/g++
+ML=$(shell [ -e Makefile.locale ]  && echo 1)
+ifeq ($(ML),1)
+	include Makefile.locale
+endif
+
+CXXFLAGS += -DETCDIR=\"$(DESTDIR)/etc/traxx\" $(INCLUDES) $(SETOPTIMIZE) -DCOLORS $(SETDEBUG) $(SETVERBOSE)
+
+OBJS = Detector.o DetElement.o Hit.o Plane.o Track.o StateVector.o FullVector.o any2str.o
+GLOBJS = GLDetector.o GLDetElement.o GLHit.o GLTrack.o GLStateVector.o GLFullVector.o Plane.cc any2str.o
+
+CFILES := $(OBJS:.o=.cc)
+
+OBJS+= getopt.o getopt1.o
+CFILES += getopt.c getopt1.c
+
+ifneq ($(DEBUG),0)
+	override CXXFLAGS += -pg -g
+endif
+
+gl : override CXXFLAGS += -fPIC -I$(INVENTOR)include -I/usr/local/include -DHEPVIS # -DGL
+gl : CFILES += SoArrow.cc SoEllipsoid.cc
+
+nogl : override CXXFLAGS += -Wall
+
+all: nogl gl
+nogl: $(OBJS)
+gl: $(GLOBJS)
+	
+clean:
+	rm -f $(OBJS) *~
+mrproper: clean
+	rm -f .\#* .*.swp core .ignore_starter.m
+ctags:
+	ctags --no-warn --c++ *.cc *.h
+	echo "!_TAG_FILE_SORTED	0" > /tmp/tags
+	cat tags |  sed -e 's/^\w*:://' >> /tmp/tags
+	cp /tmp/tags .
+
+FORCE:

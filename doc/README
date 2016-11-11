@@ -1,0 +1,9 @@
+1. Zwei Frontends: traxx, gltraxx
+2. gltraxx braucht '-g'.
+3. 'Haupt'-code: traxx.cpp.
+   Ist gut, um die Struktur des codes zu veranschaulichenstrong.
+4. setenv LD_LIBRARY_PATH /usr/local/lib:/afs/cern.ch/sw/lhcxx/specific/@sys/OpenInventor/2.6/lib:/afs/cern.ch/sw/lhcxx/specific/@sys/CLHEP/1.6.0.0/lib:/afs/cern.ch/sw/lhcxx/specific/@sys/CLHEP/1.6.0.0/lib
+
+5. Delphi  / Dis : phi z   theta  beta  kappa
+   Delphi  / Cyl : x   y   theta  phi   kappa
+   CMS           : a0  z   theta  psi   kappa(CMS)

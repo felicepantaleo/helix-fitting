@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# this is not the GUN config tool, as you can see.
+bs='\';
+echo "Base directory of the CLHEP library: ";
+echo "(maybe: /afs/cern.ch/sw/lhcxx/share/CLHEP/1.7.0.0/CLHEP )";
+read inp;
+inp=`echo $inp | sed -e "s#\/#$bs\/#"`;
+clhep="export CLHEP=$inp";
+echo "Base directory of the OpenInventor library: ";
+echo "(something like /afs/cern.ch/sw/lhcxx/specific/Linux/OpenInventor/2.6 ?)";
+read inp;
+inp=`echo $inp | sed -e "s#\/#$bs\/#"`;
+oi="export INVENTOR=$inp";
+cat etc/Makefile.template | sed -e "s/insert_INVENTOR/$oi/" | sed -e "s/insert_CLHEP/$clhep/" > Makefile;
+echo "Known problems (in case you run into troubles): "
+echo "1. Currently we can only link against libXm version 1, neither";
+echo "   Motif version 2 nor lesstif work (assuming that OpenInventor";
+echo "   is linked againts libXm version 1, too.";
+echo "   So make sure that either: libXm.so points to libXm.so.1 ";
+echo "   ( and really is Motif, NOT Lesstif! )";
+echo "   or: make a symlink from the correct file to this directory here ";
+echo "   (we pass '-L.' to the linker)";
+echo "   our change the source, so it works with lesstif - ";
+echo "   and dont forget to send me the patch!";
+echo ""
+echo "Now do: make";

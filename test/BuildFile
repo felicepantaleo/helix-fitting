@@ -1,0 +1,16 @@
+<lib name=Traxx></lib>
+
+<environment>
+  <bin file=traxx.cpp name=traxx></bin>
+</environment>
+
+<ignore>
+<environment>
+  <lib name=Inventor></lib>
+  <lib name=InventorXt></lib>
+  CXXFLAGS+=-DGL
+  CXXFLAGS+=-I/usr/local/include \
+  -I/afs/hephy.at/sw/lhcxx/specific/@sys/OpenInventor/2.6/include
+  <bin file=traxx.cpp name=gltraxx></bin>
+</environment>
+</ignore>

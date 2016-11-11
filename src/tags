@@ -1,0 +1,205 @@
+!_TAG_FILE_SORTED	0
+DEgetInfo	DetElement.cc	/^string DEgetInfo(int a)$/
+DetElement	DetElement.cc	/^DetElement::DetElement (eltype ityp, HepDouble a, /
+GLdeinitMaterial	DetElement.cc	/^void DetElement::GLdeinitMaterial ( SoSelection *r/
+GLdraw	DetElement.cc	/^void DetElement::GLdraw ( SoSelection *root ) cons/
+GLinitMaterial	DetElement.cc	/^void DetElement::GLinitMaterial ( SoSelection *roo/
+SType	DetElement.cc	/^string DetElement::SType() const {$/
+TypeName	DetElement.cc	/^HepStdString DetElement::TypeName () const {$/
+getInfo	DetElement.cc	/^string DetElement::getInfo () const {$/
+setBField	DetElement.cc	/^void DetElement::setBField( HepDouble tr, HepDoubl/
+sigPhi	DetElement.cc	/^HepDouble DetElement::sigPhi() const {$/
+sigRPhi	DetElement.cc	/^HepDouble DetElement::sigRPhi() const {$/
+write	DetElement.cc	/^void DetElement::write () const {$/
+Camera	Detector.cc	/^void Detector::Camera ( eltype tp ) const$/
+Detector	Detector.cc	/^Detector::Detector (HepStdString fname)$/
+Filename	Detector.cc	/^HepStdString Detector::Filename() const {$/
+GLdraw	Detector.cc	/^void Detector::GLdraw ( )$/
+GLepilogue	Detector.cc	/^void Detector::GLepilogue ( )$/
+GLprologue	Detector.cc	/^void Detector::GLprologue ( SoSelection *root, cha/
+Lights	Detector.cc	/^void Detector::Lights ( eltype tp ) const$/
+addMenuEntry	Detector.cc	/^void Detector::addMenuEntry ( Widget _parent, char/
+addPulldownMenu	Detector.cc	/^Widget Detector::addPulldownMenu ( Widget parent, /
+addRadioBox	Detector.cc	/^Widget Detector::addRadioBox ( Widget parent, char/
+addText	Detector.cc	/^void Detector::addText(string TextItem) {$/
+addToggleEntry	Detector.cc	/^void Detector::addToggleEntry ( Widget _parent, ch/
+arclength	Detector.cc	/^HepDouble Detector::arclength () { $/
+bfieldinfo	Detector.cc	/^string Detector::bfieldinfo()$/
+clearText	Detector.cc	/^void Detector::clearText() {$/
+keyName	Detector.cc	/^inline string Detector::keyName ( string  s )$/
+setupMenubar	Detector.cc	/^void Detector::setupMenubar ( Widget _MainWindow )/
+sort_elements	Detector.cc	/^void Detector::sort_elements()$/
+write	Detector.cc	/^void Detector::write() {$/
+writeGeneralInfo	Detector.cc	/^void Detector::writeGeneralInfo ()$/
+writePath	Detector.cc	/^void Detector::writePath (int indx)$/
+writePickedPath	Detector.cc	/^bool Detector::writePickedPath (SoNode *root, cons/
+write_raw	Detector.cc	/^void Detector::write_raw() {$/
+CMS2DelphiCov	FullVector.cc	/^void FullVector::CMS2DelphiCov ()$/
+CMSCov	FullVector.cc	/^HepSymMatrix FullVector::CMSCov ()$/
+Delphi2CMSCov	FullVector.cc	/^void FullVector::Delphi2CMSCov ()$/
+DelphiCov	FullVector.cc	/^HepSymMatrix FullVector::DelphiCov ()$/
+FullVector	FullVector.cc	/^FullVector::FullVector()$/
+GLdraw	FullVector.cc	/^void FullVector::GLdraw ( SoSelection *root ,HepDo/
+drawonCyl	FullVector.cc	/^void FullVector::drawonCyl ( SoSelection *root , s/
+drawonDis	FullVector.cc	/^void FullVector::drawonDis ( SoSelection *root , s/
+getInfo	FullVector.cc	/^string FullVector::getInfo ( int what )$/
+setCMSCov	FullVector.cc	/^void FullVector::setCMSCov ( HepSymMatrix x)$/
+setDelphiCov	FullVector.cc	/^void FullVector::setDelphiCov ( HepSymMatrix x)$/
+writeCMS	FullVector.cc	/^void FullVector::writeCMS()$/
+writeDelphi	FullVector.cc	/^void FullVector::writeDelphi()$/
+GetElementName	DetElement.cc	/^HepStdString GetElementName(eltype tp) {$/
+GetElementType	DetElement.cc	/^eltype GetElementType(HepStdString ename) {$/
+Coords	Hit.cc	/^string Hit::Coords() const$/
+Covxy	Hit.cc	/^HepDouble Hit::Covxy() const {$/
+GLdraw	Hit.cc	/^void Hit::GLdraw ( SoSelection *root ) {$/
+GLinitMaterial	Hit.cc	/^void Hit::GLinitMaterial ( SoSelection *root ) con/
+Hit	Hit.cc	/^Hit::Hit ()$/
+Phi	Hit.cc	/^HepDouble Hit::Phi() const {$/
+R	Hit.cc	/^HepDouble Hit::R()  const { $/
+RPhi	Hit.cc	/^HepDouble Hit::RPhi()   const { $/
+SigR	Hit.cc	/^HepDouble Hit::SigR() const {$/
+SigRPhi	Hit.cc	/^HepDouble Hit::SigRPhi() const {$/
+Sigx	Hit.cc	/^HepDouble Hit::Sigx() const {$/
+Sigy	Hit.cc	/^HepDouble Hit::Sigy() const {$/
+Sigz	Hit.cc	/^HepDouble Hit::Sigz() const {$/
+Smear	Hit.cc	/^void Hit::Smear ( bool det )$/
+VarPhi	Hit.cc	/^HepDouble Hit::VarPhi() const {$/
+VarR	Hit.cc	/^HepDouble Hit::VarR() const {$/
+VarRPhi	Hit.cc	/^HepDouble Hit::VarRPhi() const {$/
+Varx	Hit.cc	/^HepDouble Hit::Varx() const {$/
+Vary	Hit.cc	/^HepDouble Hit::Vary() const {$/
+Varz	Hit.cc	/^HepDouble Hit::Varz() const {$/
+getHit	Hit.cc	/^void Hit::getHit( StateVector sv )$/
+getInfo	Hit.cc	/^string Hit::getInfo () $/
+write	Hit.cc	/^void Hit::write() const {$/
+write_raw	Hit.cc	/^void Hit::write_raw () const {$/
+x	Hit.cc	/^HepDouble Hit::x()   const { $/
+y	Hit.cc	/^HepDouble Hit::y()   const { $/
+z	Hit.cc	/^HepDouble Hit::z()   const { $/
+Hit_getInfo	Hit.cc	/^string Hit_getInfo(int a)$/
+Mtest.cc	test.cc	/^int main (int argc, char **argv)$/
+Plane	Plane.cc	/^Plane::Plane () {$/
+RadVec	Plane.cc	/^HepMatrix Plane::RadVec ( vector < HepDouble > rs /
+Radius	Plane.cc	/^HepDouble Plane::Radius() const {$/
+X0	Plane.cc	/^HepDouble Plane::X0() const {$/
+Y0	Plane.cc	/^HepDouble Plane::Y0() const {$/
+a0	Plane.cc	/^HepDouble Plane::a0() {$/
+calculateCMS	Plane.cc	/^void Plane::calculateCMS()$/
+cartXY	Plane.cc	/^HepVector Plane::cartXY ( HepDouble r, HepDouble r/
+cartXY_old	Plane.cc	/^HepVector Plane::cartXY_old ( HepDouble r, HepDoub/
+kappa	Plane.cc	/^HepDouble Plane::kappa() {$/
+psi	Plane.cc	/^HepDouble Plane::psi() {$/
+s	Plane.cc	/^HepVector Plane::s( Detector *det ) {$/
+write	Plane.cc	/^void Plane::write () const $/
+write	Plane.cc	/^void RealPlane::write () const $/
+CMS2Delphi	StateVector.cc	/^void StateVector::CMS2Delphi ( HepDouble myr )$/
+CMSShortString	StateVector.cc	/^string StateVector::CMSShortString()$/
+CMSString	StateVector.cc	/^string StateVector::CMSString()$/
+CMSValues	StateVector.cc	/^string StateVector::CMSValues() {$/
+Delphi	StateVector.cc	/^HepVector StateVector::Delphi()$/
+Delphi2CMS	StateVector.cc	/^void StateVector::Delphi2CMS ()$/
+DelphiFixedString	StateVector.cc	/^string StateVector::DelphiFixedString()$/
+DelphiShortString	StateVector.cc	/^string StateVector::DelphiShortString()$/
+DelphiString	StateVector.cc	/^string StateVector::DelphiString()$/
+DelphiValues	StateVector.cc	/^string StateVector::DelphiValues() {$/
+GLdraw	StateVector.cc	/^void StateVector::GLdraw ( SoSelection *root ,HepD/
+GLinitMaterial	StateVector.cc	/^void StateVector::GLinitMaterial ( SoSelection *ro/
+Phi	StateVector.cc	/^HepDouble StateVector::Phi()$/
+Propagate	StateVector.cc	/^StateVector StateVector::Propagate ( DetElement nx/
+PropagateCyl	StateVector.cc	/^StateVector StateVector::PropagateCyl ( DetElement/
+PropagateDis	StateVector.cc	/^StateVector StateVector::PropagateDis ( DetElement/
+R	StateVector.cc	/^HepDouble StateVector::R() const $/
+Radius	StateVector.cc	/^HepDouble StateVector::Radius() const$/
+Randomize	StateVector.cc	/^void StateVector::Randomize( interval a, interval /
+Scatter	StateVector.cc	/^void StateVector::Scatter ( bool det )$/
+StateVector	StateVector.cc	/^StateVector::StateVector()$/
+XY0	StateVector.cc	/^HepVector StateVector::XY0() {$/
+a0	StateVector.cc	/^HepDouble StateVector::a0()$/
+beta	StateVector.cc	/^HepDouble StateVector::beta()$/
+clear	StateVector.cc	/^void StateVector::clear ()$/
+drawonCyl	StateVector.cc	/^void StateVector::drawonCyl ( SoSelection *root , /
+drawonDis	StateVector.cc	/^void StateVector::drawonDis ( SoSelection *root , /
+eff_thick	StateVector.cc	/^HepDouble StateVector::eff_thick()$/
+getInfo	StateVector.cc	/^string StateVector::getInfo ( int what )$/
+getPlane	StateVector.cc	/^void StateVector::getPlane ( Plane pl , DetElement/
+identifierCMS	StateVector.cc	/^string StateVector::identifierCMS()$/
+identifierDelphi	StateVector.cc	/^string StateVector::identifierDelphi()$/
+identifierDer	StateVector.cc	/^string StateVector::identifierDer()$/
+identifierDeriv	StateVector.cc	/^string StateVector::identifierDeriv()$/
+kappa	StateVector.cc	/^HepDouble StateVector::kappa()$/
+kappa_cms	StateVector.cc	/^HepDouble StateVector::kappa_cms()$/
+phi	StateVector.cc	/^HepDouble StateVector::phi()$/
+pr	StateVector.cc	/^HepDouble StateVector::pr()$/
+psi	StateVector.cc	/^HepDouble StateVector::psi()$/
+setCMS	StateVector.cc	/^void StateVector::setCMS ( HepDouble a0, HepDouble/
+setDelphi	StateVector.cc	/^void StateVector::setDelphi ( HepDouble a, HepDoub/
+unwrapPhi	StateVector.cc	/^void StateVector::unwrapPhi( StateVector *prev )$/
+write	StateVector.cc	/^void StateVector::write()$/
+writeCMS	StateVector.cc	/^void StateVector::writeCMS()$/
+writeDelphi	StateVector.cc	/^void StateVector::writeDelphi()$/
+writeParam	StateVector.cc	/^void StateVector::writeParam() { $/
+write_raw	StateVector.cc	/^void StateVector::write_raw ()$/
+zVth_fak	StateVector.cc	/^HepDouble StateVector::zVth_fak() const {$/
+CovMSPhi	Track.cc	/^HepSymMatrix Track::CovMSPhi() const$/
+CovMSPhiR	Track.cc	/^HepSymMatrix Track::CovMSPhiR() const$/
+CovPhi	Track.cc	/^HepSymMatrix Track::CovPhi() const$/
+GLdraw	Track.cc	/^void Track::GLdraw ( )$/
+GLdrawRefTrack	Track.cc	/^void Track::GLdrawRefTrack ()$/
+GLdrawTrueTrack	Track.cc	/^void Track::GLdrawTrueTrack ()$/
+GLinitMaterial	Track.cc	/^void Track::GLinitMaterial ( )$/
+GlobalCyl	Track.cc	/^FullVector Track::GlobalCyl ( int level )$/
+GlobalDis	Track.cc	/^FullVector Track::GlobalDis ( int level )$/
+GlobalFit	Track.cc	/^FullVector Track::GlobalFit ( int level )$/
+KalmanCyl	Track.cc	/^FullVector Track::KalmanCyl ( int level )$/
+KalmanDis	Track.cc	/^FullVector Track::KalmanDis ( int level )$/
+KalmanFilter	Track.cc	/^FullVector Track::KalmanFilter ( int level )$/
+ReferenceTrack	Track.cc	/^void Track::ReferenceTrack ( bool comp_der )$/
+ReferenceTrackFromTrueTrack	Track.cc	/^void Track::ReferenceTrackFromTrueTrack ( bool com/
+RiemannFit	Track.cc	/^FullVector Track::RiemannFit ( int level, int iter/
+RiemannFit_Plane	Track.cc	/^RealPlane Track::RiemannFit_Plane ( bool MS , bool/
+Simulate	Track.cc	/^StateVector Track::Simulate ( char scatter, char s/
+Track	Track.cc	/^Track::Track ( Detector *det )$/
+allR	Track.cc	/^vector < HepDouble > Track::allR() const$/
+allz	Track.cc	/^HepVector Track::allz() const$/
+computeCov	Track.cc	/^void Track::computeCov ( int level, bool init_spec/
+computeCovMS	Track.cc	/^void Track::computeCovMS ( Plane *plane, int level/
+computeFVCov	Track.cc	/^HepSymMatrix Track::computeFVCov ( \/* HepMatrix B /
+correct_NO	Track.cc	/^inline void Track::correct_NO ( bool fullVar, HepD/
+force_computeCov	Track.cc	/^void Track::force_computeCov ( int level )$/
+force_initR_pred	Track.cc	/^inline void Track::force_initR_pred() {$/
+initCov	Track.cc	/^void Track::initCov()$/
+initCov_special	Track.cc	/^void Track::initCov_special()$/
+initR_pred	Track.cc	/^inline void Track::initR_pred() {$/
+operator =	Track.cc	/^Track & Track::operator = ( Track &r )$/
+setReferenceTrack	Track.cc	/^void Track::setReferenceTrack ( StateVector sv, bo/
+write	Track.cc	/^void Track::write ()$/
+write_raw	Track.cc	/^void Track::write_raw ( char *file) const$/
+about_w	Detector.cc	/^void about_w(Widget root, XtPointer , XmPushButton/
+addChild	Detector.cc	/^void addChild ( SoSelection *root, SoNode *node )$/
+any2str	any2str.cc	/^string any2str ( char *st )$/
+av_list_cb	Detector.cc	/^void av_list_cb (Widget root, XtPointer Client, Xm/
+call_pointer	test.cc	/^void call_pointer ( void (*pointer)(int) )$/
+cancelObject	Detector.cc	/^void cancelObject(Widget root, XtPointer , XmPushB/
+del_leading_spaces	DetElement.cc	/^inline HepStdString del_leading_spaces(HepStdStrin/
+delete_about	Detector.cc	/^void delete_about()$/
+eltype2str	DetElement.cc	/^string eltype2str ( eltype tp ) {$/
+file_not_found	Detector.cc	/^void file_not_found (HepStdString filename) {$/
+getBfieldInfo	Detector.cc	/^string getBfieldInfo(int)$/
+getfvInfo	FullVector.cc	/^string getfvInfo (int a)$/
+getsvInfo	StateVector.cc	/^string getsvInfo (int a)$/
+invokeQuit	Detector.cc	/^void invokeQuit(Widget, XtPointer ClientData, XmPu/
+myMousePressCB	Detector.cc	/^void myMousePressCB(void *userData, SoEventCallbac/
+mycout	FullVector.cc	/^void mycout ( HepSymMatrix x )$/
+mypointer	test.cc	/^void mypointer(int a)$/
+no_info_available	Detector.cc	/^string no_info_available (int)$/
+operator>>	DetElement.cc	/^istream& operator>> (istream& s, DetElement& el)$/
+parse_line	DetElement.cc	/^inline eldesc parse_line(HepStdString line) {$/
+random_interval	StateVector.cc	/^inline HepDouble random_interval ( HepDouble min ,/
+ret_el	Track.cc	/^HepDouble ret_el ( HepMatrix m, int row, int col )/
+ret_els	Track.cc	/^HepDouble ret_els ( HepSymMatrix m, int row, int c/
+showObject_m	Detector.cc	/^void showObject_m(Widget root, XtPointer , XmPushB/
+toggle_hit	Detector.cc	/^void toggle_hit(Widget, XtPointer Client, XmPushBu/
+toggle_prec	Detector.cc	/^void toggle_prec(Widget, XtPointer Client, XmPushB/
+toggle_track	Detector.cc	/^void toggle_track(Widget root, XtPointer Client, X/
+writeObject	Detector.cc	/^void writeObject(Widget root, XtPointer , XmPushBu/
+writeObject2	Detector.cc	/^void writeObject2(Widget r, XtPointer c, XmPushBut/
